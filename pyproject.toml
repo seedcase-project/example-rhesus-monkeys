@@ -22,6 +22,8 @@ python = "^3.12"
 polars = "^1.24.0"
 pyjanitor = "^0.30.0"
 seedcase-sprout = {git = "https://github.com/seedcase-project/seedcase-sprout.git"}
+requests = "^2.32.3"
+fastexcel = "^0.13.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.6.2"
