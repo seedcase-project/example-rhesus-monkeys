@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "NAME"
+name = "example-rhesus-monkeys"
 version = "0.0.1"
 description = ""
 authors = [
@@ -11,11 +11,11 @@ maintainers = [
   "Kristiane Beicher <kris.beicher@clin.au.dk>",
 ]
 readme = "README.md"
-repository = "https://github.com/seedcase-project/REPO"  
+repository = "https://github.com/seedcase-project/example-rhesus-monkeys"  
 license = "MIT"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/seedcase-project/REPO/issues"
+"Bug Tracker" = "https://github.com/seedcase-project/example-rhesus-monkeys/issues"
 
 [tool.poetry.dependencies]
 python = "^3.12"
