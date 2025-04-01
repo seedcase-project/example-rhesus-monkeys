@@ -13,13 +13,17 @@ properties = sp.PackageProperties(
     ),
 )
 
-package_path = Path(__file__).resolve().parent.parent / "datapackage.json"
+package_path = Path(__file__).resolve().parent.parent
 
-updated_package_properties = sp.edit_package_properties(
-    path=package_path,
-    properties=properties,
+current_properties = sp.read_properties(
+    path=sp.path_properties(path=package_path),
+)
+
+updated_package_properties = sp.update_package_properties(
+    current_properties=current_properties,  # changed to current_properties
+    update_properties=properties,
 )
 
 package_path = sp.write_package_properties(
-    properties=updated_package_properties, path=package_path
+    properties=updated_package_properties, path=sp.path_properties(path=package_path)
 )
