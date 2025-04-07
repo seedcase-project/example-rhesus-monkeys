@@ -5,7 +5,7 @@ import seedcase_sprout.core as sp
 package_path = Path(__file__).resolve().parent.parent
 
 current_properties = sp.read_properties(
-    path=sp.path_properties(path=package_path),
+    path=sp.PackagePath(package_path).properties(),
 )
 
 updated_properties = sp.PackageProperties(
@@ -24,6 +24,7 @@ updated_package_properties = sp.update_package_properties(
     update_properties=updated_properties,
 )
 
-package_path = sp.write_package_properties(
-    properties=updated_package_properties, path=sp.path_properties(path=package_path)
+sp.write_package_properties(
+    properties=updated_package_properties,
+    path=sp.PackagePath(package_path).properties(),
 )

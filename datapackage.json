@@ -1,8 +1,8 @@
 {
   "name": "maternal-obesity-rhesus-monkeys",
   "id": "51333448-145c-4a9c-bd54-8a3c22239792",
-  "title": "Impact of maternal obesity on the gestational metabolome and infant metabolome, brain, and behavioral development in rhesus macaques",
-  "description": "Maternal gestational obesity is associated with elevated risks for neurodevelopmental disorder, including autism spectrum disorder. However, the mechanisms by which maternal adiposity influences fetal developmental programming remain to be elucidated. We aimed to understand the impact of maternal obesity on the metabolism of both pregnant mothers and their offspring, as well as on metabolic, brain, and behavioral development of offspring by utilizing metabolomics, protein, and behavioral assays in a non-human primate model. ",
+  "title": "Impact of maternal obesity on the gestational metabolome and infant metabolome, brain, and behavioral development in rhesus macaques.",
+  "description": "Maternal gestational obesity is associated with elevated risks for neurodevelopmental disorder, including autism spectrum disorder.",
   "version": "0.1.0",
   "created": "2025-04-01T10:39:55+02:00",
   "contributors": [

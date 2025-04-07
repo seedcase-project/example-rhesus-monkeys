@@ -76,8 +76,9 @@ properties = sp.PackageProperties(
     ],
 )
 
+# Create the path to the package
 package_path = Path(__file__).resolve().parent.parent
 
 sp.write_package_properties(
-    properties=properties, path=Path(package_path / "datapackage.json")
+    properties=properties, path=sp.PackagePath(package_path).properties()
 )
