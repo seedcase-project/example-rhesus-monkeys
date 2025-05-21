@@ -171,18 +171,18 @@ df_adult_link = (
 # More than one measure in metadata_maternal_bl?
 """
 11 - Metadata_Maternal_placenta.csv
-* Variables 
+* Variables
 o Exp: Samples IDs. The same “Exp” represent the same sample in Concentration_Maternal.placenta.csv file.
-o Mother_ID: IDs of mothers. 
+o Mother_ID: IDs of mothers.
 o Batch: The experiment was conducted over two batches (Batch1 or Batch2)
 o Group: Lean or Obese.
 o GD: Exact gestational day (GD) when samples were collected.
-o Target_GD: Target GD for sample collection. 
-o Dilution_factor: Dilution factor used to prepare NMR samples. 
-o BCS: Body Condition Score (BCS) 
-o Tissue_weight: Weight of placental tissue sample. 
+o Target_GD: Target GD for sample collection.
+o Dilution_factor: Dilution factor used to prepare NMR samples.
+o BCS: Body Condition Score (BCS)
+o Tissue_weight: Weight of placental tissue sample.
 o V1: Volume of solvent used to extract (uL). Used to correct the metabolite concentration.
 o V2: Volume of polar layer (methanol + water) collected (uL). Used to correct the metabolite concentration.
-o V3: Buffer added to reconstitute the sample after freeze drying (uL). Used to correct the metabolite concentration. 
+o V3: Buffer added to reconstitute the sample after freeze drying (uL). Used to correct the metabolite concentration.
 * Missing data codes: Indicated by NAs.
 """
