@@ -1,7 +1,7 @@
 # import polars as pl
 import seedcase_sprout as sp
 
-# from scripts.package_properties import package_properties
+from scripts.package_properties import package_properties
 
 # from scripts.resource_properties import resource_properties
 
@@ -14,7 +14,7 @@ def main():
     sp.create_properties_script()
 
     ## Load your raw, but tidy, data into a Polars DataFrame.
-    # package_path = sp.PackagePath()
+    package_path = sp.PackagePath()
     # raw_data = pl.read_csv(package_path.root() / "raw" / "data.csv")
     ## Extract field properties from the data.
     # field_properties = sp.extract_field_properties(data=raw_data)
@@ -25,15 +25,15 @@ def main():
     #     fields=field_properties,
     # )
 
-    ## Save the properties to `datapackage.json`.
-    # sp.write_properties(properties=package_properties)
+    # Save the properties to `datapackage.json`.
+    sp.write_properties(properties=package_properties)
 
     ## README
 
-    ## Create the README text for the data package.
-    # readme_text = sp.as_readme_text(package_properties)
-    ## Write the README text to a `README.md` file.
-    # sp.write_file(readme_text, package_path.readme())
+    # Create the README text for the data package.
+    readme_text = sp.as_readme_text(package_properties)
+    # Write the README text to a `README.md` file.
+    sp.write_file(readme_text, package_path.readme())
 
     ## BATCH DATA
 

@@ -1,58 +1,67 @@
 {
-  "name": "maternal-obesity-rhesus-monkeys",
-  "id": "51333448-145c-4a9c-bd54-8a3c22239792",
-  "title": "Impact of maternal obesity on the gestational metabolome and infant metabolome, brain, and behavioral development in rhesus macaques.",
-  "description": "Maternal gestational obesity is associated with elevated risks for neurodevelopmental disorder, including autism spectrum disorder.",
+  "name": "example-rhesus-monkeys",
+  "id": "23025289-f416-40ae-a9d0-1160c8bb4999",
+  "title": "Example Data Package: Impact of maternal obesity on the gestational metabolome and infant metabolome, brain, and behavioral development in rhesus macaques",
+  "description": "Data from on rhesus monkeys from a study investigating the impact of maternal\nobesity on the gestational metabolome and infant metabolome, brain, and\nbehavioral development in rhesus macaques by [Hasegawa et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/36005637/).\nThe data is available on [Zenodo](https://zenodo.org/records/7055715).\n\nThis repository shows how the Seedcase tools structure a dataset with\nmultiple data resources.\n",
   "version": "0.1.0",
-  "created": "2025-04-01T10:39:55+02:00",
+  "created": "2025-08-28T14:00:29+02:00",
   "contributors": [
     {
+      "title": "Carolyn M. Slupsky",
+      "email": "cslupsky@ucdavis.edu",
+      "organization": "Department of Food Science and Technology; Department of Nutrition, University of California-Davis",
+      "roles": [
+        "creator",
+        "principal investigator"
+      ]
+    },
+    {
+      "title": "John P. Capitanio",
+      "email": "jpcapitanio@ucdavis.edu",
+      "organization": "California National Primate Research Center, University of California-Davis",
+      "roles": [
+        "creator"
+      ]
+    },
+    {
+      "title": "Mari S. Golub",
+      "email": "msgolub@ucdavis.edu",
+      "organization": "California National Primate Research Center, University of California-Davis",
+      "roles": [
+        "creator"
+      ]
+    },
+    {
+      "title": "Judy Van de Water",
+      "email": "javandewater@ucdavis.edu",
+      "organization": "The UC Davis MIND Institute; Department of Internal Medicine, University of California-Davis",
+      "roles": [
+        "creator"
+      ]
+    },
+    {
+      "title": "Catherine A. VandeVoort",
+      "email": "cavandevoort@ucdavis.edu",
+      "organization": "California National Primate Research Center; Department of Obstetrics and Gynecology, University of California-Davis",
+      "roles": [
+        "creator"
+      ]
+    },
+    {
+      "title": "Cheryl K. Walker",
+      "email": "ckwalker@ucdavis.edu",
+      "organization": "California National Primate Research Center; Department of Obstetrics and Gynecology, University of California-Davis",
+      "roles": [
+        "creator"
+      ]
+    },
+    {
       "title": "Yu Hasegawa",
-      "path": "https://bolling.foodsci.wisc.edu/staff/hasegawa-phd-yu/",
+      "email": "yhasegawa2@wisc.edu",
+      "organization": "University of Wisconsin-Madison",
       "roles": [
-        "creator"
-      ]
-    },
-    {
-      "title": "John Capitanio",
-      "path": "https://psychology.ucdavis.edu/people/john-capitanio",
-      "roles": [
-        "creator"
-      ]
-    },
-    {
-      "title": "Mari Golub",
-      "path": "https://www.etox.ucdavis.edu/people/mari-golub",
-      "roles": [
-        "creator"
-      ]
-    },
-    {
-      "title": "Judith Van de Waters",
-      "path": "https://profiles.ucdavis.edu/judy.vandewater",
-      "roles": [
-        "creator"
-      ]
-    },
-    {
-      "title": "Catherine VandeVoort",
-      "path": "https://profiles.ucdavis.edu/catherine.vandevoort",
-      "roles": [
-        "creator"
-      ]
-    },
-    {
-      "title": "Cheryl Walker",
-      "path": "https://pod.ucdavis.edu/people/cheryl-walker",
-      "roles": [
-        "creator"
-      ]
-    },
-    {
-      "title": "Carolyn Slupsky",
-      "path": "https://nutrition.ucdavis.edu/people/carolyn-slupsky",
-      "roles": [
-        "creator"
+        "creator",
+        "author"
       ]
     }
   ],
@@ -66,7 +75,8 @@
   "sources": [
     {
       "title": "Impact of maternal obesity on the gestational metabolome and infant metabolome, brain, and behavioral development in rhesus macaques",
-      "path": "https://zenodo.org/records/7055715"
+      "path": "https://zenodo.org/records/7055715",
+      "version": "V1"
     }
   ]
 }
