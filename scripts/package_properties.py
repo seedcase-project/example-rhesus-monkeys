@@ -5,44 +5,123 @@ import seedcase_sprout as sp
 package_properties = sp.PackageProperties(
     ## Required:
     name="example-rhesus-monkeys",
-    title="",
-    description="",
+    title=(
+        "Example Data Package: Impact of maternal obesity on the gestational "
+        "metabolome and infant metabolome, brain, and behavioral development in rhesus "
+        "macaques"
+    ),
+    description=(
+        """
+        Rhesus monkey data from a study investigating the impact of maternal
+        obesity on the gestational metabolome and infant metabolome, brain, and
+        behavioral development in rhesus macaques by [Hasegawa et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/36005637/).
+        The data is available on [Zenodo](https://zenodo.org/records/7055715).
+
+        This repository shows how the Seedcase tools structure a dataset with
+        multiple data resources.
+    """
+    ),
     licenses=[
         sp.LicenseProperties(
             ## Required:
-            name="",
+            name="CCO_1.0",
             ## Optional:
-            # path="",
-            # title="",
+            path="https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+            title="CCO 1.0 UNIVERSAL",
         ),
     ],
     ## Optional:
     # homepage="",
-    # contributors=[
-    #    sp.ContributorProperties(
-    #        ## Required:
-    #        title="",
-    #        ## Optional:
-    #        path="",
-    #        email="",
-    #        given_name="",
-    #        family_name="",
-    #        organization="",
-    #        roles=[""],
-    #    ),
-    # ],
+    contributors=[
+        sp.ContributorProperties(
+            ## Required:
+            title="Carolyn M. Slupsky",
+            ## Optional:
+            email="cslupsky@ucdavis.edu",
+            organization=(
+                "Department of Food Science and Technology; Department of "
+                "Nutrition, University of California-Davis"
+            ),
+            roles=["creator", "principal investigator"],
+        ),
+        sp.ContributorProperties(
+            ## Required:
+            title="John P. Capitanio",
+            ## Optional:
+            email="jpcapitanio@ucdavis.edu",
+            organization=(
+                "California National Primate Research Center, University of "
+                "California-Davis"
+            ),
+            roles=["creator"],
+        ),
+        sp.ContributorProperties(
+            ## Required:
+            title="Mari S. Golub",
+            ## Optional:
+            email="msgolub@ucdavis.edu",
+            organization=(
+                "California National Primate Research Center, University of "
+                "California-Davis"
+            ),
+            roles=["creator"],
+        ),
+        sp.ContributorProperties(
+            ## Required:
+            title="Judy Van de Water",
+            ## Optional:
+            email="javandewater@ucdavis.edu",
+            organization=(
+                "The UC Davis MIND Institute; Department of Internal "
+                "Medicine, University of California-Davis"
+            ),
+            roles=["creator"],
+        ),
+        sp.ContributorProperties(
+            ## Required:
+            title="Catherine A. VandeVoort",
+            ## Optional:
+            email="cavandevoort@ucdavis.edu",
+            organization=(
+                "California National Primate Research Center; Department of "
+                "Obstetrics and Gynecology, University of California-Davis"
+            ),
+            roles=["creator"],
+        ),
+        sp.ContributorProperties(
+            # Required
+            title="Cheryl K. Walker",
+            ## Optional:
+            email="ckwalker@ucdavis.edu",
+            organization=(
+                "California National Primate Research Center; Department of "
+                "Obstetrics and Gynecology, University of California-Davis"
+            ),
+            roles=["creator"],
+        ),
+        sp.ContributorProperties(
+            ## Required:
+            title="Yu Hasegawa",
+            ## Optional:
+            email="yhasegawa2@wisc.edu",
+            organization=("University of Wisconsin-Madison"),
+            roles=["creator", "author"],
+        ),
+    ],
     # keywords=[""],
     # image="",
-    # sources=[
-    #    sp.SourceProperties(
-    #        ## Required:
-    #        title="",
-    #        ## Optional:
-    #        path="",
-    #        email="",
-    #        version="",
-    #    ),
-    # ],
+    sources=[
+        sp.SourceProperties(
+            ## Required:
+            title=(
+                "Impact of maternal obesity on the gestational metabolome and infant "
+                "metabolome, brain, and behavioral development in rhesus macaques"
+            ),
+            ## Optional:
+            path="https://zenodo.org/records/7055715",
+            version="V1",
+        ),
+    ],
     # resources=[
     #     resource_properties,
     # ],
