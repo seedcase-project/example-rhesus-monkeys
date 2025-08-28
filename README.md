@@ -1,23 +1,21 @@
-# Template for Seedcase Python packages
+# Example Data Package: Impact of maternal obesity on the gestational metabolome and infant metabolome, brain, and behavioral development in rhesus macaques
 
-This repository contains a template for setting up new data example repos in Seedcase. The first step is to create a new repository using this template. This can easily be done by clicking the "Use this template" button on the repository page or by using the GitHub CLI:
+Data from on rhesus monkeys from a study investigating the impact of maternal
+obesity on the gestational metabolome and infant metabolome, brain, and
+behavioral development in rhesus macaques by [Hasegawa et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/36005637/).
+The data is available on [Zenodo](https://zenodo.org/records/7055715).
 
-``` bash
-# NAME is the name to give the new repository
-gh repo create NAME --template seedcase-project/template-example-repo
-```
+This repository shows how the Seedcase tools structure a dataset with
+multiple data resources.
 
-## Setting things up after cloning
 
-To add Poetry:
+| Field    | Value                                   |
+|----------|-----------------------------------------|
+| Name     | `example-rhesus-monkeys`     |
+| ID       | `23025289-f416-40ae-a9d0-1160c8bb4999`       |
+| Version  | `0.1.0`  |
+| Homepage | N/A |
+| Created  | 28 August 2025, 14:00  |
+| Licenses | CCO_1.0  |
 
-``` bash
-cd new-project
-poetry init
-```
-
-Search for `NAME` and `REPO` and replace them with the name of your project and the repository name. Then look for any `TODO` items.
-
-## Setting things up
-
-Use the commands found in [`spaid`](https://github.com/seedcase-project/spaid) repo to run the next setup steps.
+No resources available.

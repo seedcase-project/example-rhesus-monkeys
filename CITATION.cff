@@ -1,0 +1,30 @@
+title: "Example Rhesus Monkeys Data Package"
+abstract: "This is an example Data Package using Seedcase to structure and document rhesus monkeys data."
+authors:
+  - family-names: Johnston
+    given-names: Luke W.
+    orcid: https://orcid.org/0000-0003-4169-2616
+    affiliation: "Steno Diabetes Center Aarhus"
+  - family-names: Beicher
+    given-names: Kristiane
+    orcid: https://orcid.org/0000-0001-7556-9566
+    affiliation: "Steno Diabetes Center Aarhus"
+  - family-names: Brødbæk
+    given-names: Signe Kirk
+    orcid: https://orcid.org/0009-0000-2208-7088
+    affiliation: "Steno Diabetes Center Aarhus"
+  - family-names: Vago
+    given-names: Marton
+    orcid: https://orcid.org/0009-0007-4628-655X
+    affiliation: "Steno Diabetes Center Aarhus"
+cff-version: 1.2.0
+# doi:
+keywords:
+  - "Data Package"
+  - "Seedcase"
+  - "Rhesus Monkeys"
+license: "CC0-1.0"
+message: "If you use this data package, please cite it using these metadata."
+repository-code: "https://github.com/seedcase-project/example-rhesus-monkeys"
+# TODO: Add a URL for any website for the data package.
+# url: ""
