@@ -2,7 +2,11 @@
     just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: install-deps format-python check-python check-spelling check-commits test
+run-all: install-deps format-python check-python check-spelling check-commits build
+
+# List all TODO items in the repository
+list-todos:
+  grep -R -n --exclude="*.code-snippets" --exclude="justfile" "TODO" *
 
 # Install the pre-commit hooks
 install-precommit:
@@ -26,39 +30,31 @@ format-python:
   uv run ruff check --fix .
   uv run ruff format .
 
-# Run checks on commits with non-main branches
+# Check the commit messages on the current branch that are not on the main branch
 check-commits:
-  #!/bin/zsh
+  #!/usr/bin/env bash
   branch_name=$(git rev-parse --abbrev-ref HEAD)
-  number_of_commits=$(git rev-list --count HEAD ^$branch_name)
+  number_of_commits=$(git rev-list --count HEAD ^main)
   if [[ ${branch_name} != "main" && ${number_of_commits} -gt 0 ]]
   then
-    uv run cz check --rev-range main..HEAD
+    # If issue happens, try `uv tool update-shell`
+    uvx --from commitizen cz check --rev-range main..HEAD
   else
-    echo "Not on main or haven't committed yet."
+    echo "On 'main' or current branch doesn't have any commits."
   fi
 
 # Check for spelling errors in files
 check-spelling:
   uv run typos
 
-test:
-  #!/bin/zsh
-  temp_dir="_temp/test-data-package"
-  rm -rf $temp_dir
-  mkdir -p $temp_dir
-  # vcs-ref means the current commit/head, not a tag.
-  # `.` means the current directory contains the template.
-  uvx copier copy --vcs-ref=HEAD . $temp_dir \
-    --defaults \
-    --data package_abbrev= "test-data-package" \
-    --data package_github="first-last/test-data-package" \
-    --data author_given_name="First" \
-    --data author_family_name="Last" \
-    --data author_email="first.last@example.com"
-  # TODO: Other checks/tests?
+# Re-build the data package
+build:
+  uv run main.py
 
-cleanup:
-  #!/bin/zsh
-  temp_dir=$("_temp/test-data-package"))
-  rm -rf $temp_dir
+# Check for and apply updates from the template
+update-from-template:
+  uvx copier update --trust --defaults
+
+# Reset repo changes to match the template
+reset-from-template:
+  uvx copier recopy --trust --defaults
