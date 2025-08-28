@@ -1,15 +1,18 @@
 [project]
 name = "example-rhesus-monkeys"
 version = "0.1.0"
-# TODO: Add a description of the package.
-description = ""
+description = "This is an example Data Package using Seedcase to structure and document rhesus monkeys data."
 authors = [
+  {name = "Luke W. Johnston", email = "lwjohnst@gmail.com" },
+  {name = "Kristiane Beicher", email = "kris.beicher@clin.au.dk" },
   {name = "Signe Kirk Brødbæk", email = "signekb@clin.au.dk" },
-  # TODO: Add more authors as needed.
+  {name = "Marton Vago", email = "marton.vago95@gmail.com" },
 ]
 maintainers = [
+  {name = "Luke W. Johnston", email = "lwjohnst@gmail.com" },
+  {name = "Kristiane Beicher", email = "kris.beicher@clin.au.dk" },
   {name = "Signe Kirk Brødbæk", email = "signekb@clin.au.dk" },
-  # TODO: Add more maintainers as needed.
+  {name = "Marton Vago", email = "marton.vago95@gmail.com" },
 ]
 readme = "README.md"
 
