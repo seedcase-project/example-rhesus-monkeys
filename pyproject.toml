@@ -22,6 +22,7 @@ license-files = ["LICENSE-MIT.md", "LICENSE.md"]
 requires-python = ">=3.12"
 dependencies = [
     "polars>=1.32.3",
+    "requests>=2.32.5",
     "seedcase-sprout>=0.48.0",
 ]
 
