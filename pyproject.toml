@@ -1,35 +1,39 @@
 [project]
 name = "example-rhesus-monkeys"
 version = "0.1.0"
-description = "Add your description here"
+description = "This is an example Data Package using Seedcase to structure and document rhesus monkeys data."
 authors = [
   {name = "Luke W. Johnston", email = "lwjohnst@gmail.com" },
   {name = "Kristiane Beicher", email = "kris.beicher@clin.au.dk" },
+  {name = "Signe Kirk Brødbæk", email = "signekb@clin.au.dk" },
+  {name = "Marton Vago", email = "marton.vago95@gmail.com" },
 ]
 maintainers = [
   {name = "Luke W. Johnston", email = "lwjohnst@gmail.com" },
   {name = "Kristiane Beicher", email = "kris.beicher@clin.au.dk" },
+  {name = "Signe Kirk Brødbæk", email = "signekb@clin.au.dk" },
+  {name = "Marton Vago", email = "marton.vago95@gmail.com" },
 ]
 readme = "README.md"
-license = "MIT"
-license-files = ["LICENSE.md"]
+
+license = "MIT AND CC0-1.0"
+license-files = ["LICENSE-MIT.md", "LICENSE.md"]
+
 requires-python = ">=3.12"
 dependencies = [
-    "polars>=1.27.0",
-    "pyjanitor>=0.31.0",
-    "seedcase-sprout",
+    "polars>=1.32.3",
+    "requests>=2.32.5",
+    "seedcase-sprout>=0.48.0",
 ]
 
 [project.urls]
 issues = "https://github.com/seedcase-project/example-rhesus-monkeys/issues"
 repository = "https://github.com/seedcase-project/example-rhesus-monkeys"
 
-[tool.uv.sources]
-seedcase-sprout = { git = "https://github.com/seedcase-project/seedcase-sprout" }
-
 [dependency-groups]
 dev = [
     "commitizen>=4.5.1",
     "pre-commit>=4.2.0",
-    "ruff>=0.11.4",
+    "ruff>=0.11.5",
+    "typos>=1.35.5",
 ]

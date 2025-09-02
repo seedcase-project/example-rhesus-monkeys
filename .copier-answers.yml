@@ -1,0 +1,12 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 0.15.3
+_src_path: gh:seedcase-project/template-data-package
+author_email: signekb@clin.au.dk
+author_family_name: Brødbæk
+author_given_name: Signe Kirk
+cc0_license: true
+copyright_year: '2025'
+github_board_number: '18'
+package_abbrev: example-rhesus-monkeys
+package_github_repo: seedcase-project/example-rhesus-monkeys
+review_team: '@seedcase-project/developers'
