@@ -32,7 +32,7 @@ repository = "https://github.com/seedcase-project/example-rhesus-monkeys"
 
 [dependency-groups]
 dev = [
-    "commitizen>=4.16.3",
+    "commitizen>=4.16.4",
     "pre-commit>=4.6.0",
     "ruff>=0.15.20",
     "typos>=1.46.0",
